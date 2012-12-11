@@ -103,6 +103,8 @@ class Process
      */
     public function run($callback = null)
     {
+        set_time_limit(240);
+
         $this->stdout = '';
         $this->stderr = '';
         $that = $this;
